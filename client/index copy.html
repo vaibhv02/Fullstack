@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" media="only screen and (max-width: 600px)" href="./style.css">
+    <link rel="stylesheet" media="only screen and (min-width: 601px)" href="./website.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Workout</title>
+</head>
+
+
+<body>
+    <header>
+        <img src="./assets/vector-object-and-icons-for-sport-label-gym-badge-fitness-logo-design.jpg" class="img" alt="FitLife Logo"></img>
+        <h2 style="color: rgb(69, 63, 63);">Welcome to FitLife Workout</h2>
+        <p2 style="color: rgb(19, 9, 9);">Get Fit, Stay Healthy, Live Strong!</p2>
+        <span id="my-email" style="color: white;" class="email-display"></span>
+    </header>
+    <h4  class="text">Search Exercise</h4>
+    <div class="container">
+    <label  class="text">Category:</label>
+    <select id="categoryDropdown" class="button-text" onchange="saveSelection('selectedCategory', this.value)">
+        <option value="">Select Category</option>
+    </select>
+
+    <label class="text">Difficulty:</label>
+    <select id="difficultyDropdown" class="button-text" onchange="saveSelection('selectedDifficulty', this.value)">
+        <option value="">Select Difficulty</option>
+    </select>
+
+    <label class="text">Force:</label>
+    <select id="forceDropdown" class="button-text" onchange="saveSelection('selectedForce', this.value)">
+        <option value="">Select Force</option>
+    </select>
+
+    <label class="text">Muscle:</label>
+    <select id="muscleDropdown" class="button-text" onchange="saveSelection('selectedMuscle', this.value)">
+        <option value="">Select Muscle</option>
+    </select>
+
+    <button id="searchBtn" class="button-text" style="margin-left: 25px;">Search</button>
+</div>
+    <div id="cards" class="container card-background-image"></div>
+    <div id="pagination" class="scrollmenu"></div>
+
+    <section>
+        <div class="container">
+            <div class="text">
+                <h2>About Us</h2>
+                <l>At FitLife Gym, we believe that fitness is not just a journey, it's a lifestyle.</l>
+                <l>Our state-of-the-art fitness facility is designed to cater to individuals of all fitness levels and age
+                    groups. Whether you're a seasoned athlete or a beginner taking the first step towards a healthier lifestyle.
+                </l>
+                <l>FitLife Gym is your ultimate destination for achieving your fitness goals.</l>
+            </div>
+            <div>
+                <img class="img" src="./assets/profile.jpeg">
+              </div>
+          </div>
+    </section>
+    <section>
+        <h2 class="text">Disclaimer</h2>
+        <p class="text">The website is under development !!! New exciting features coming soon.</p>
+    </section>
+    <section>
+        <h2 class="text">Contact Us</h2>
+        <p class="text">Have any questions or need assistance? Reach out to our friendly support team:</p>
+        <ul>
+            <li class="text">Phone: 9876543210</li>
+            <li class="text">Email: info@fitlife.com</li>
+        </ul>
+    </section>
+    <script src="./exercise.js"></script>
+</body>
+
+</html>
